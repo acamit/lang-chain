@@ -1,0 +1,24 @@
+# pyproject.toml
+[project]
+name = "lang-chain"
+version = "0.1.0"
+description = "Minimal LangChain example project"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "acamit" }]
+license = { text = "MIT" }
+keywords = ["langchain", "openai", "llm"]
+dependencies = [
+    "langchain>=1.2.0",
+    "langchain-anthropic>=1.3.0",
+    "langchain-openai>=1.1.6",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.0",
+  "black>=24.0",
+  "isort>=5.12",
+  "mypy>=1.0",
+]
+
