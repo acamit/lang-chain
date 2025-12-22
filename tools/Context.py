@@ -1,7 +1,6 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class Context:
+class Context(BaseModel):
     """Custom runtime context schema for the tool."""
     user_id: str
